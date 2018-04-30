@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
 import { RoutingModule } from '../routing/routing.module';
+import { RecipeFormComponent } from './recipe-form/recipe-form.component';
 
 @NgModule({
   imports: [
@@ -13,11 +14,13 @@ import { RoutingModule } from '../routing/routing.module';
   ],
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RecipeFormComponent
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RecipeFormComponent,
   ]
 
 })

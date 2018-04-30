@@ -1,5 +1,5 @@
 
-export class Receipe {
+export class Recipe {
     public title: string;
     public id: string;
     public publishDate: Date;

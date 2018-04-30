@@ -1,0 +1,18 @@
+<div class="recipe-add-container">
+  <form novalidate #addForm = "ngForm">
+    <div class="form-row">
+      <div class="form-item">
+        <mat-form-field class="form-item-input">
+          <input matInput placeholder="Title" name="title" [(ngModel)]="addRecipe.title">
+        </mat-form-field>
+      </div>
+      <div class="form-item"> 
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a publish date" name="publishDate" [(ngModel)]="addRecipe.publishDate">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</div>
