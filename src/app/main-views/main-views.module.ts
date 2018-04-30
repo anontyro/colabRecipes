@@ -4,6 +4,8 @@ import { IndexViewComponent } from './index-view/index-view.component';
 import { AboutViewComponent } from './about-view/about-view.component';
 import { LoginViewComponent } from './auth/login-view/login-view.component';
 import { LogoutViewComponent } from './auth/logout-view/logout-view.component';
+import { AddNewRecipeComponent } from './add-new-recipe/add-new-recipe.component';
+import { DetailRecipeComponent } from './detail-recipe/detail-recipe.component';
 
 @NgModule({
   imports: [
@@ -14,12 +16,16 @@ import { LogoutViewComponent } from './auth/logout-view/logout-view.component';
     AboutViewComponent,
     LoginViewComponent,
     LogoutViewComponent,
+    AddNewRecipeComponent,
+    DetailRecipeComponent,
   ],
   exports: [
     IndexViewComponent,
     AboutViewComponent,
     LoginViewComponent,
-    LogoutViewComponent
+    LogoutViewComponent,
+    AddNewRecipeComponent,
+    DetailRecipeComponent
   ]
 })
 export class MainViewsModule { }
