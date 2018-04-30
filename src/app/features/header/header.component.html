@@ -1,11 +1,14 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <span>Colab Receipes</span>
+      <span [routerLink]="['']" class="header-item">Colab Receipes</span>
       <span class="head-spacer"></span>
-      <div class="header-item">
+      <div class="header-item" [routerLink]="['/about']">
           <mat-icon class="header-icon">info</mat-icon>
           <div class="header-info">About</div>
       </div>
-      <mat-icon class="example-icon">delete</mat-icon>
+      <div class="header-item">
+        <mat-icon class="header-icon">lock_open</mat-icon>
+        <div class="header-info">Login</div>
+      </div>    
     </mat-toolbar-row>
   </mat-toolbar>

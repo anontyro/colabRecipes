@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
+import { RoutingModule } from '../routing/routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
+
   ],
   declarations: [
     HeaderComponent,
