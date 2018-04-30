@@ -1,0 +1,14 @@
+.head-spacer {
+    flex: 1 1 auto;
+  }
+  .header-item{
+      margin: 0px 10px;
+      display: flex;
+      .header-info{
+          margin-left: 10px;
+      }
+  }
+  .header-item:hover{
+      cursor: pointer;
+    color: darken($color: #fff, $amount: 25%);
+  }
